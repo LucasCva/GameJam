@@ -38,14 +38,16 @@
   "name":"GameJam",
   "resources":[
     {"id":{"name":"obj_amenic","path":"objects/obj_amenic/obj_amenic.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room_Lucas","path":"rooms/Room_Lucas/Room_Lucas.yy",},},
+    {"id":{"name":"Room_Pedro","path":"rooms/Room_Pedro/Room_Pedro.yy",},},
     {"id":{"name":"spr_amenic","path":"sprites/spr_amenic/spr_amenic.yy",},},
     {"id":{"name":"spr_cenario_teste","path":"sprites/spr_cenario_teste/spr_cenario_teste.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room_Pedro","path":"rooms/Room_Pedro/Room_Pedro.yy",},},
+    {"roomId":{"name":"Room_Lucas","path":"rooms/Room_Lucas/Room_Lucas.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
