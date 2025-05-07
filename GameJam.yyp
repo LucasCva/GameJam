@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Anotações","folderPath":"folders/Anotações.yy","name":"Anotações","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Caminhos","folderPath":"folders/Caminhos.yy","name":"Caminhos","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -37,7 +37,9 @@
   },
   "name":"GameJam",
   "resources":[
+    {"id":{"name":"obj_amenic","path":"objects/obj_amenic/obj_amenic.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_amenic","path":"sprites/spr_amenic/spr_amenic.yy",},},
     {"id":{"name":"spr_cenario_teste","path":"sprites/spr_cenario_teste/spr_cenario_teste.yy",},},
   ],
   "resourceType":"GMProject",
