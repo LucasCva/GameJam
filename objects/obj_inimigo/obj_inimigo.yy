@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_amenic",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_inimigo",
+  "eventList":[],
   "managed":true,
-  "name":"obj_amenic",
+  "name":"obj_inimigo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objetos/Player.yy",
+    "name":"Inimigos",
+    "path":"folders/Objetos/Inimigos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_amenic",
-    "path":"sprites/spr_amenic/spr_amenic.yy",
+    "name":"spr_inimigobase",
+    "path":"sprites/spr_inimigobase/spr_inimigobase.yy",
   },
   "spriteMaskId":null,
   "visible":true,
