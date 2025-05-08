@@ -1,33 +1,76 @@
-// FIZ UM BAGULHO ESTARNHO AI DE GRAVIDADE E PULO, AJEITA AI :) ASS: lucas
+#region CONTROLES	
+var key_dir = keyboard_check(ord("D"));
+var key_esq = keyboard_check(ord("A"));
+var key_jump = keyboard_check_pressed(vk_space);
+var key_dash = keyboard_check_pressed(vk_shift);
+#endregion
 
-var velocidade_horizontal = 0;
+#region MOVIMENTAÇÃO
 
-if (keyboard_check(ord("D"))) {
-	 velocidade_horizontal = velocidade;
-}
-if (keyboard_check(ord("A"))) {
-	velocidade_horizontal = -velocidade;
-}
+var move = key_dir - key_esq;
 
-velocidade_vertical  = gravidade;
+hspd = move * spd;
+vspd = vspd + grv;
 
-// Movimento horizontal
-if(!place_meeting(x + sign(velocidade_horizontal), y, obj_chao)){ // Se não ter colisão ele continua
-	x += velocidade_horizontal;
-}
+if (hspd != 0) image_xscale = sign(hspd);  
 
-// Movimento vertical
-if(!place_meeting(x, y + velocidade_vertical, obj_chao)){
-	y += velocidade_vertical
-}else{
-	while(!place_meeting(x , y + sign(velocidade_vertical), obj_chao)){
-		y += sign(velocidade_vertical);
+#endregion
+
+#region COLISÃO HORIZONTAL
+
+if (place_meeting(x + hspd, y, obj_chao)) {
+	while (!place_meeting(x + sign(hspd), y, obj_chao)) {
+		x += sign(hspd);
 	}
-	velocidade_vertical = 0;
+	hspd = 0;
+}
+x += hspd;
+
+
+#endregion
+
+#region COLISÃO VERTICAL
+
+if (place_meeting(x, y + vspd, obj_chao)) {
+	while (!place_meeting(x, y + sign(vspd), obj_chao)) {
+		y += sign(vspd);
+	}
+	vspd = 0;
+}
+y += vspd;
+
+
+#endregion
+
+#region PULO
+
+var no_chao = place_meeting(x, y + 1, obj_chao);
+
+if (no_chao) {qtd_pulos=0}
+
+if (key_jump && qtd_pulos < 2) {
+	vspd = -12;	
+	qtd_pulos = qtd_pulos + 1;
 }
 
-// Pulinho básico
 
-if (keyboard_check_pressed(vk_space)){
-	y -= pulo;
+
+
+#endregion
+
+#region DASH
+
+
+
+if (key_dash && alarm[0] <= 0 && alarm[1] <= 0) {
+	spd = 18;
+	alarm[0] = 10;
+	alarm[1] = 100;
+}else if (alarm[0] <= 0){
+	spd = 8;
 }
+
+
+
+#endregion
+
