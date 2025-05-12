@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inimigo",
+  "%Name":"obj_esqueleto",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inimigo",
+  "name":"obj_esqueleto",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inimigo_Base",
-    "path":"folders/Objetos/Inimigos/Inimigo_Base.yy",
+    "name":"Esqueleto",
+    "path":"folders/Objetos/Inimigos/Esqueleto.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo",
+    "path":"objects/obj_inimigo/obj_inimigo.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigobase",
-    "path":"sprites/spr_inimigobase/spr_inimigobase.yy",
+    "name":"spr_esqueleto_idle",
+    "path":"sprites/spr_esqueleto_idle/spr_esqueleto_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

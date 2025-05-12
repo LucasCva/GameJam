@@ -1,14 +1,18 @@
 velocidade = 3;
 distancia_do_player = 0;
 gravidade = 5;
+andar = 0
 
 function seguir_player(deteccao){
 	if(abs(distancia_do_player) < deteccao){
+		andar = 1;
 		if(obj_amenic.x < x){
-			x -= velocidade;
+			x -= andar * velocidade;
 		}else{
-			x += velocidade;
+			x += andar * velocidade;
 		}
+	}else{
+		andar = 0;
 	}
 }
 	

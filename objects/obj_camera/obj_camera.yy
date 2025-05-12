@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inimigo",
+  "%Name":"obj_camera",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inimigo",
+  "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inimigo_Base",
-    "path":"folders/Objetos/Inimigos/Inimigo_Base.yy",
+    "name":"Câmera",
+    "path":"folders/Objetos/Câmera.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_inimigobase",
-    "path":"sprites/spr_inimigobase/spr_inimigobase.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
