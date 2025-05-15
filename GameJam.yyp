@@ -51,6 +51,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
     {"id":{"name":"obj_esqueleto","path":"objects/obj_esqueleto/obj_esqueleto.yy",},},
+    {"id":{"name":"obj_esqueleto01","path":"objects/obj_esqueleto01/obj_esqueleto01.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
     {"id":{"name":"Room_Lucas","path":"rooms/Room_Lucas/Room_Lucas.yy",},},
     {"id":{"name":"Room_Pedro","path":"rooms/Room_Pedro/Room_Pedro.yy",},},

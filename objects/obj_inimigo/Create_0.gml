@@ -1,26 +1,27 @@
 velocidade = 3;
+distancia_ataque = 32;
 distancia_do_player = 0;
 gravidade = 5;
-andar = 0
+andar = false;
 
 function seguir_player(deteccao){
-	if(abs(distancia_do_player) < deteccao){
-		andar = 1;
+	if(abs(distancia_do_player) < deteccao && distancia_do_player > distancia_ataque){
+		andar = true;
 		if(obj_amenic.x < x){
 			x -= andar * velocidade;
-		}else{
+		}else if(obj_amenic.x > x && andar = 1){
 			x += andar * velocidade;
 		}
 	}else{
-		andar = 0;
+		andar = false;
 	}
 }
 	
 function atacar(){
-	if(distancia_do_player <= 35){
-		velocidade = 0
+	if(distancia_do_player <= distancia_ataque){
+		andar = false
 	}else{
-		velocidade = 3
+		andar = true;
 	}
 }
 
